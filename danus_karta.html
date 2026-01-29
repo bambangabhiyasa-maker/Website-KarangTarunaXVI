@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Danus Karta - Lapak Produk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS utama -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-item nav-logo">
+                <img src="img/logo.png" alt="Logo Karang Taruna XVI" class="navbar-logo"> Karang Taruna XVI
+            </a>
+        </div>
+        <div class="nav-right">
+            <span class="nav-item active">Danus Karta - Lapak Karang Taruna XVI</span>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <section class="danus-karta">
+        <h1>Danus Karta</h1>
+        <p>Lapak produk Karang Taruna XVI - Mendukung ekonomi komunitas dengan produk berkualitas</p>
+
+        <!-- FILTER KATEGORI -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Semua Produk</button>
+            <button class="filter-btn" data-filter="makanan">Makanan</button>
+            <button class="filter-btn" data-filter="minuman">Minuman</button>
+            <button class="filter-btn" data-filter="kerajinan">Kerajinan</button>
+            <button class="filter-btn" data-filter="fashion">Fashion</button>
+        </div>
+
+        <!-- PRODUK GRID -->
+        <div class="produk-grid">
+
+            <!-- PRODUK 1 -->
+            <div class="produk-card" data-kategori="makanan">
+                <div class="produk-image">
+                    <img src="img/produk/produk1.jpg" alt="Brownies Coklat Premium">
+                    <span class="badge-kategori">Makanan</span>
+                    <div class="produk-overlay">
+                        <button class="btn-detail">Detail</button>
+                    </div>
+                </div>
+                <div class="produk-content">
+                    <h3>Brownies Coklat Premium</h3>
+                    <p>Brownies coklat lezat dengan topping kacang dan coklat leleh. Cocok untuk hadiah atau cemilan pribadi.</p>
+                    <div class="produk-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(45 review)</span>
+                    </div>
+                    <div class="produk-footer">
+                        <span class="harga">Rp 35.000</span>
+                        <button class="btn-beli">
+                            <i class="fa-solid fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUK 2 -->
+            <div class="produk-card" data-kategori="makanan">
+                <div class="produk-image">
+                    <img src="img/produk/produk2.jpg" alt="Roti Sourdough Artisan">
+                    <span class="badge-kategori">Makanan</span>
+                    <div class="produk-overlay">
+                        <button class="btn-detail">Detail</button>
+                    </div>
+                </div>
+                <div class="produk-content">
+                    <h3>Roti Sourdough Artisan</h3>
+                    <p>Roti sourdough premium dengan fermentasi alami. Tekstur lembut dan rasa yang khas. Pesan pagi, ambil sore.</p>
+                    <div class="produk-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(32 review)</span>
+                    </div>
+                    <div class="produk-footer">
+                        <span class="harga">Rp 45.000</span>
+                        <button class="btn-beli">
+                            <i class="fa-solid fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUK 3 -->
+            <div class="produk-card" data-kategori="minuman">
+                <div class="produk-image">
+                    <img src="img/produk/produk3.jpg" alt="Kopi Specialty Arabika">
+                    <span class="badge-kategori">Minuman</span>
+                    <div class="produk-overlay">
+                        <button class="btn-detail">Detail</button>
+                    </div>
+                </div>
+                <div class="produk-content">
+                    <h3>Kopi Specialty Arabika</h3>
+                    <p>Kopi arabika pilihan dari petani lokal. Dipanggang fresh setiap minggu. Aroma dan cita rasa yang sempurna.</p>
+                    <div class="produk-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(58 review)</span>
+                    </div>
+                    <div class="produk-footer">
+                        <span class="harga">Rp 55.000</span>
+                        <button class="btn-beli">
+                            <i class="fa-solid fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUK 4 -->
+            <div class="produk-card" data-kategori="makanan">
+                <div class="produk-image">
+                    <img src="img/produk/produk4.jpg" alt="Dodol Tradisional">
+                    <span class="badge-kategori">Makanan</span>
+                    <div class="produk-overlay">
+                        <button class="btn-detail">Detail</button>
+                    </div>
+                </div>
+                <div class="produk-content">
+                    <h3>Dodol Tradisional</h3>
+                    <p>Dodol tradisional dengan resep turun temurun. Manis alami tanpa pengawet buatan. Tersedia berbagai varian rasa.</p>
+                    <div class="produk-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(28 review)</span>
+                    </div>
+                    <div class="produk-footer">
+                        <span class="harga">Rp 25.000</span>
+                        <button class="btn-beli">
+                            <i class="fa-solid fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUK 5 -->
+            <div class="produk-card" data-kategori="kerajinan">
+                <div class="produk-image">
+                    <img src="img/produk/produk5.jpg" alt="Tas Batik Handmade">
+                    <span class="badge-kategori">Kerajinan</span>
+                    <div class="produk-overlay">
+                        <button class="btn-detail">Detail</button>
+                    </div>
+                </div>
+                <div class="produk-content">
+                    <h3>Tas Batik Handmade</h3>
+                    <p>Tas tangan dari kain batik asli. Dibuat dengan tangan oleh pengrajin lokal. Unik dan berkualitas tinggi.</p>
+                    <div class="produk-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(22 review)</span>
+                    </div>
+                    <div class="produk-footer">
+                        <span class="harga">Rp 85.000</span>
+                        <button class="btn-beli">
+                            <i class="fa-solid fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUK 6 -->
+            <div class="produk-card" data-kategori="minuman">
+                <div class="produk-image">
+                    <img src="img/produk/produk6.jpg" alt="Jus Buah Segar">
+                    <span class="badge-kategori">Minuman</span>
+                    <div class="produk-overlay">
+                        <button class="btn-detail">Detail</button>
+                    </div>
+                </div>
+                <div class="produk-content">
+                    <h3>Jus Buah Segar 500ml</h3>
+                    <p>Jus buah premium dibuat dari buah-buahan segar pilihan. Tanpa tambahan gula, sehat dan menyegarkan.</p>
+                    <div class="produk-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(41 review)</span>
+                    </div>
+                    <div class="produk-footer">
+                        <span class="harga">Rp 30.000</span>
+                        <button class="btn-beli">
+                            <i class="fa-solid fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUK 7 -->
+            <div class="produk-card" data-kategori="fashion">
+                <div class="produk-image">
+                    <img src="img/produk/produk7.jpg" alt="T-Shirt Karang Taruna">
+                    <span class="badge-kategori">Fashion</span>
+                    <div class="produk-overlay">
+                        <button class="btn-detail">Detail</button>
+                    </div>
+                </div>
+                <div class="produk-content">
+                    <h3>T-Shirt Karang Taruna XVI</h3>
+                    <p>Kaos branded Karang Taruna XVI dengan desain eksklusif. Material berkualitas, nyaman dipakai untuk segala acara.</p>
+                    <div class="produk-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <span>(35 review)</span>
+                    </div>
+                    <div class="produk-footer">
+                        <span class="harga">Rp 65.000</span>
+                        <button class="btn-beli">
+                            <i class="fa-solid fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUK 8 -->
+            <div class="produk-card" data-kategori="kerajinan">
+                <div class="produk-image">
+                    <img src="img/produk/produk8.jpg" alt="Sarung Bantal Bordir">
+                    <span class="badge-kategori">Kerajinan</span>
+                    <div class="produk-overlay">
+                        <button class="btn-detail">Detail</button>
+                    </div>
+                </div>
+                <div class="produk-content">
+                    <h3>Sarung Bantal Bordir Tangan</h3>
+                    <p>Sarung bantal dengan bordir tangan yang indah. Desain tradisional yang elegan untuk dekorasi rumah modern.</p>
+                    <div class="produk-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(19 review)</span>
+                    </div>
+                    <div class="produk-footer">
+                        <span class="harga">Rp 95.000</span>
+                        <button class="btn-beli">
+                            <i class="fa-solid fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PRODUK 9 -->
+            <div class="produk-card" data-kategori="fashion">
+                <div class="produk-image">
+                    <img src="img/produk/produk9.jpg" alt="Topi Branded Karta">
+                    <span class="badge-kategori">Fashion</span>
+                    <div class="produk-overlay">
+                        <button class="btn-detail">Detail</button>
+                    </div>
+                </div>
+                <div class="produk-content">
+                    <h3>Topi Branded Karang Taruna</h3>
+                    <p>Topi baseball dengan logo karang taruna yang keren. Material premium dengan desain modern yang trendy.</p>
+                    <div class="produk-rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(27 review)</span>
+                    </div>
+                    <div class="produk-footer">
+                        <span class="harga">Rp 75.000</span>
+                        <button class="btn-beli">
+                            <i class="fa-solid fa-cart-plus"></i> Beli
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const produkCards = document.querySelectorAll('.produk-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                produkCards.forEach(card => {
+                    if (filterValue === 'all') {
+                        card.style.display = 'block';
+                        setTimeout(() => card.classList.add('show'), 10);
+                    } else {
+                        if (card.getAttribute('data-kategori') === filterValue) {
+                            card.style.display = 'block';
+                            setTimeout(() => card.classList.add('show'), 10);
+                        } else {
+                            card.classList.remove('show');
+                            setTimeout(() => card.style.display = 'none', 300);
+                        }
+                    }
+                });
+            });
+        });
+
+        // Initialize - show all cards on load
+        produkCards.forEach(card => card.classList.add('show'));
+
+        // Button functionality
+        document.querySelectorAll('.btn-beli').forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.preventDefault();
+                alert('Terima kasih! Hubungi kami untuk pemesanan:\nWA: 081234567890\nEmail: kartaxvi@soreang.com');
+            });
+        });
+
+        document.querySelectorAll('.btn-detail').forEach(btn => {
+            btn.addEventListener('click', () => {
+                alert('Halaman detail produk akan segera hadir. Silakan hubungi kami untuk informasi lebih lengkap.');
+            });
+        });
+    </script>
+
+</body>
+</html>

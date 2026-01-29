@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Arsip Kegiatan Karang Taruna</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS utama -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="index.html" class="nav-item nav-logo">
+                <img src="img/logo.png" alt="Logo Karang Taruna XVI" class="navbar-logo"> Karang Taruna XVI
+            </a>
+        </div>
+        <div class="nav-right">
+            <span class="nav-item active">Arsip Kegiatan Karang Taruna XVI</span>
+        </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <section class="arsip-kegiatan">
+        <h1>Arsip Kegiatan</h1>
+        <p>Arsip kegiatan Karang Taruna XVI Soreang Residence</p>
+
+        <!-- FILTER -->
+        <div class="filter-container">
+            <button class="filter-btn active" data-filter="all">Semua</button>
+            <button class="filter-btn" data-filter="sosial">Sosial</button>
+            <button class="filter-btn" data-filter="olahraga">Olahraga</button>
+            <button class="filter-btn" data-filter="budaya">Budaya</button>
+        </div>
+
+        <!-- ARSIP GRID -->
+        <div class="arsip-grid">
+
+            <!-- KEGIATAN 1 -->
+            <div class="kegiatan-card" data-kategori="sosial">
+                <div class="kegiatan-image">
+                    <img src="img/arsip/kegiatan1.jpg" alt="Gotong Royong Kerja Bakti">
+                    <div class="overlay-info">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="kegiatan-content">
+                    <span class="kategori">Sosial</span>
+                    <h3>Baksos Kebersihan Lingkungan</h3>
+                    <p>Program kebersihan berupa kerja bakti komplek Soreang Residence bersama anggota karang taruna yang berkolaborasi dengan warga.</p>
+                    <div class="kegiatan-info">
+                        <i class="fa-solid fa-calendar"></i> 15 Januari 2024
+                    </div>
+                </div>
+            </div>
+
+            <!-- KEGIATAN 2 -->
+            <div class="kegiatan-card" data-kategori="olahraga">
+                <div class="kegiatan-image">
+                    <img src="img/kegiatan2.jpg" alt="Turnamen Bola Volly Karang Taruna">
+                    <div class="overlay-info">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="kegiatan-content">
+                    <span class="kategori">Olahraga</span>
+                    <h3>Turnamen Bola Volly Karang Taruna</h3>
+                    <p>Kompetisi bola volly antar RT dengan partisipasi tinggi dari semua warga Komplek Soreang Residence.</p>
+                    <div class="kegiatan-info">
+                        <i class="fa-solid fa-calendar"></i> 22 Januari 2024
+                    </div>
+                </div>
+            </div>
+
+            <!-- KEGIATAN 3 -->
+            <div class="kegiatan-card" data-kategori="budaya">
+                <div class="kegiatan-image">
+                    <img src="img/arsip/kegiatan3.jpg" alt="SOREFEST 2025">
+                    <div class="overlay-info">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="kegiatan-content">
+                    <span class="kategori">Budaya</span>
+                    <h3>SOREFEST 2025</h3>
+                    <p>Perayaan budaya lokal dengan menampilkan pentas seni yang diisi oleh penampilan warga serta berbagai kuliner khas nusantara.</p>
+                    <div class="kegiatan-info">
+                        <i class="fa-solid fa-calendar"></i> 5 Februari 2024
+                    </div>
+                </div>
+            </div>
+
+            <!-- KEGIATAN 5 -->
+            <div class="kegiatan-card" data-kategori="sosial">
+                <div class="kegiatan-image">
+                    <img src="img/arsip/kegiatan5.jpg" alt="Memperingati Isra Mi'raj">
+                    <div class="overlay-info">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="kegiatan-content">
+                    <span class="kategori">Sosial</span>
+                    <h3>Memperingati Isra Mi'raj</h3>
+                    <p>Acara pengajian dan berbagi ke anak yatim piatu dalam rangka memperingati Isra Mi'raj.</p>
+                    <div class="kegiatan-info">
+                        <i class="fa-solid fa-calendar"></i> 10 Februari 2024
+                    </div>
+                </div>
+            </div>
+
+            <!-- KEGIATAN 7 -->
+            <div class="kegiatan-card" data-kategori="olahraga">
+                <div class="kegiatan-image">
+                    <img src="img/arsip/kegiatan7.jpg" alt="Gerak Jalan dan Senam Sehat">
+                    <div class="overlay-info">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </div>
+                </div>
+                <div class="kegiatan-content">
+                    <span class="kategori">Olahraga</span>
+                    <h3>Gerak Jalan dan Senam Sehat</h3>
+                    <p>Program kesehatan dengan jalan sehat keliling lingkungan Desa Gandasari yang di lanjut dengan senam sehat.</p>
+                    <div class="kegiatan-info">
+                        <i class="fa-solid fa-calendar"></i> 24 Februari 2024
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const kegiatanCards = document.querySelectorAll('.kegiatan-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                kegiatanCards.forEach(card => {
+                    if (filterValue === 'all') {
+                        card.style.display = 'block';
+                        setTimeout(() => card.classList.add('show'), 10);
+                    } else {
+                        if (card.getAttribute('data-kategori') === filterValue) {
+                            card.style.display = 'block';
+                            setTimeout(() => card.classList.add('show'), 10);
+                        } else {
+                            card.classList.remove('show');
+                            setTimeout(() => card.style.display = 'none', 300);
+                        }
+                    }
+                });
+            });
+        });
+
+        // Initialize - show all cards on load
+        kegiatanCards.forEach(card => card.classList.add('show'));
+    </script>
+
+</body>
+</html>
